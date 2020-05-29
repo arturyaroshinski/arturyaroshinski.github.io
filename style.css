@@ -1,0 +1,26 @@
+body{
+    display: flex;
+}
+.wrapper{
+    margin: 0 auto;
+}
+
+.page-header{
+    text-align: center;
+}
+
+td{
+    text-align: center;
+}
+
+.summary{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.languages{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.education{
+    font-family: 'Hind Siliguri', sans-serif;
+}
