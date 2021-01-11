@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+    background: url(/img/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 5px 0 0 0;
+}
+
+body {
+    font-family: "Fraunces", serif;
+    min-height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 560px;
+
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+        11px 9px 15px 5px rgba(0, 0, 0, 0.34);
+    box-shadow: 0px 10px 13px -7px #000000,
+        11px 9px 15px 5px rgba(0, 0, 0, 0.34);
+}
+
+.about-myself {
+    width: 340px;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 46px;
+    letter-spacing: 1px;
+
+    padding-bottom: 12px;
+    border-bottom: 8px solid;
+}
+
+.profession {
+    font-size: 24px;
+    padding-top: 6px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.link-item {
+    border-bottom: 2px solid #af9a9a;
+    transition: all 0.3s ease;
+}
+
+.link-item:hover {
+    border-bottom: 2px solid #fcbf49;
+}
+
+.download-icon {
+    height: 16px;
+    cursor: pointer;
+}

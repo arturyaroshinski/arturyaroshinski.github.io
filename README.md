@@ -1,1 +1,0 @@
-# Yaroshinski-CV
