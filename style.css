@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    background: url(/img/bg.jpg) no-repeat center center fixed;
+    background: url(/img/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -31,7 +31,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    width: 560px;
+    width: 480px;
 
     -webkit-box-shadow: 0px 10px 13px -7px #000000,
         11px 9px 15px 5px rgba(0, 0, 0, 0.34);
@@ -48,14 +48,15 @@ body {
     font-size: 50px;
     line-height: 46px;
     letter-spacing: 1px;
-
+    overflow: hidden;
     padding-bottom: 12px;
-    border-bottom: 8px solid;
+    border-bottom: 6px solid;
 }
 
 .profession {
     font-size: 24px;
     padding-top: 6px;
+    overflow: hidden;
 }
 
 .links {
@@ -77,4 +78,91 @@ body {
 .download-icon {
     height: 16px;
     cursor: pointer;
+}
+
+.animated {
+    overflow: hidden;
+}
+
+.name > span {
+    display: block;
+}
+
+.animate-name {
+    animation: showName 1s;
+    animation-delay: 0.5s;
+    bottom: 0;
+    transform: translate(0, 110%);
+    animation-fill-mode: forwards;
+}
+
+.animate-profession {
+    overflow: hidden;
+    animation: showProfession 0.5s;
+    animation-delay: 1.75s;
+    bottom: 0;
+    transform: translate(0, -125%);
+    animation-fill-mode: forwards;
+}
+
+@keyframes showName {
+    0% {
+        transform: translate3d(0, 100%, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(0, 60%, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes showProfession {
+    0% {
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .card {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-myself {
+        margin: auto;
+        width: 240px;
+    }
+
+    .name {
+        padding-bottom: 8px;
+        border-bottom: 4px solid;
+        font-size: 30px;
+        line-height: 36px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .profession {
+        padding-top: 4px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 22px;
+    }
+
+    .links {
+        width: 240px;
+        margin: auto;
+        padding-top: 20px;
+        text-align: center;
+        display: block;
+        align-items: center;
+    }
 }
